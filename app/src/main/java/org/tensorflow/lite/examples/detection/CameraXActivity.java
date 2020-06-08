@@ -128,7 +128,7 @@ public abstract class CameraXActivity extends AppCompatActivity {
                 if (previewWidth == 0) {
                     previewWidth = rgbFrameBitmap.getWidth();
                     previewHeight = rgbFrameBitmap.getHeight();
-                    onPreviewSizeChosen(new Size(previewWidth, previewHeight), 0);
+                    initDetector();
                 }
                 processImage();
             }
@@ -176,8 +176,7 @@ public abstract class CameraXActivity extends AppCompatActivity {
 
     protected abstract void processImage();
 
-    protected abstract void onPreviewSizeChosen(final Size size, final int rotation);
-
+    protected abstract void initDetector();
 
     /**
      * -------------------------------------------------

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000"
     tools:context=".CameraXActivity">
 
     <!--org.tensorflow.lite.examples.detection.customview.AutoFitTextureView
@@ -39,8 +40,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginBottom="15dp"
-            android:text="Tap on screen to take a photo"
-            android:textColor="#CD252525"
+            android:text="Berühren um zu Scannen"
+            android:textColor="#CDEAEAEA"
             android:textSize="18sp" />
 
         <Button
